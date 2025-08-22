@@ -1,9 +1,11 @@
 - pipeline: deploy_to_production
   name: Deploy to Production
   refs:
-  - refs/heads/Mistr
   - :default
+  - refs/heads/Mistr
   events:
   - type: PUSH
+  terminate_stale_runs: true
   fail_on_prepare_env_warning: true
+  concurrent_pipeline_runs: true
   resources: MEDIUM
