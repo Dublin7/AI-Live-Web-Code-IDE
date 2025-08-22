@@ -38,3 +38,4 @@
     - type: SELENIUM_CHROME
       connection:
         host: selenium-ch
+    reset_entrypoint: true
