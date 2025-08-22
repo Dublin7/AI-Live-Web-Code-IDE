@@ -15,7 +15,17 @@
     commands:
     - nuget restore
     - msbuild
-    instance_type: GENERAL_MEDIUM
+    sync_paths:
+    - pipeline_path: /
+      vm_path: c:\buddy
+      direction: PIPELINE_TO_VM
+    - pipeline_path: ""
+      vm_path: ""
+      direction: VM_TO_PIPELINE
+    - pipeline_path: /
+      vm_path: c:\buddy
+      direction: VM_TO_PIPELINE
+    instance_type: GENERAL_XLARGE
   - action: npm test
     type: BUILD
     docker_image_name: library/node
