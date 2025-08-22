@@ -38,4 +38,3 @@
     - type: SELENIUM_CHROME
       connection:
         host: selenium-ch
-    shell: BASH
