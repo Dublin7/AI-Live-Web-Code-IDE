@@ -16,3 +16,16 @@
     - nuget restore
     - msbuild
     instance_type: GENERAL_MEDIUM
+  - action: npm test
+    type: BUILD
+    docker_image_name: library/node
+    docker_image_tag: 22
+    execute_commands:
+    - "# yarn install"
+    - npm install
+    - npm test
+    services:
+    - type: SELENIUM_CHROME
+      connection:
+        host: selenium-ch
+    shell: BASH
