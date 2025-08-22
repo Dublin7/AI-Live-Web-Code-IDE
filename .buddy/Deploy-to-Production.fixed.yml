@@ -15,6 +15,17 @@
     commands:
     - nuget restore
     - msbuild
+    variables:
+    - key: Kij
+      value: '!encrypted O5nW0MMWUfMKD+VDz/ty/HI/E/D1ruP0LGaicpDUiGJrUWBMNNtAgrESr9dzDw7E10cYFp6c/zSfdcnBJ8UORWu79Iho4PxMnDJTVGCCXID33ENPnYNjvQNIxp9s2yyaI76zpHGnJx5pwme5aw4EU0QsTDHbZPY8nsZ6NcXYo+qyNeUjLkxm6nOOU1ORcOp5PtTka+BQ/IvHkSw5bi9xSqNJsdDJBC0ozO1GDJ7MAjHPAm4ripHUz+iczsypXRCKATi69lHrZ5PLvvFgfK2MDhWjLntg8ZN79L3TdSqSRB3CfwDMnP7W+rdSg78AH38bEptSaX1mQ69fXm/K8CfkqBUlNP32TlD5QRrvma+id48J2lnTCZ6bO7NOUr+JFT8v8gEI8wipVokBg0g/oKTfxHtDp+xIHfVetQReqqSaDVL48CGVwOTJ4MpcaI7Q9PMgpusDy4WUv6G5r8ivYSL0tnntTgxWXxlzUZj2rqf3FuaUlk+Ibsg3QNipiUPC4MM8ycFpyboAVs5F9EFPjpRRXA==.aqmleK656TPzVo0WK6Sw6A=='
+      type: SSH_KEY
+      encrypted: true
+      file_path: "~/.ssh/kij"
+      file_chmod: 600
+      file_place: CONTAINER
+      public_value: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF/B99iRv47O3xVi3H6J43g6EIiVXorgKaUshrZnaISN
+      key_fingerprint: d4:d1:c6:11:14:b5:a8:ef:d3:4e:d3:87:d6:a0:ad:79
+      checksum: b627cf3363f4fdac191dd753085aa52c259b607662f25a44a25b4a3e4dabe760
     sync_paths:
     - pipeline_path: /
       vm_path: c:\buddy
